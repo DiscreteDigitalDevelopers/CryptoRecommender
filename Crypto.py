@@ -1,9 +1,11 @@
 import numpy as np
 import sys
+from datetime import dt
 
 class Crypto:
 	def __init__(self, ticker, price = None, sentiment = None):
 		self.ticker = ticker
+		self.last_price = None
 
 		if price is None:
 			self.price = {}
@@ -16,10 +18,14 @@ class Crypto:
 			self.sentiment = sentiment
 
 	def __repr__(self):
-		pass
+		return f'{self.ticker}: ${last_price[1]:.2f} at {self.from_unix(last_price[0])}'
 
-	def update_price(self, time, price):
-		self.price[time] = price
+	def update_price(self, timestamp, p):
+		self.price[timestamp] = p
+		last_price = (timestamp, p)
+
+	def update_sentiment(self, timestamp, s):
+		self.sentiment[timestamp] = s
 
 	def plot_price(filename = None):
 		x = [i for i in self.price.keys()]
@@ -30,3 +36,11 @@ class Crypto:
 			plt.show()
 		else:
 			plt.savefig(filename)
+
+	@staticmethod
+	def to_unix(d):
+		return int(d.timestamp())
+
+	@staticmethod
+	def from_unix(unix_time):
+		return dt.from_timestamp(unix_time)
