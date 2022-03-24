@@ -1,0 +1,902 @@
+[
+    {
+        "name": "Bitcoin",
+        "symbol": "BTC",
+        "market_cap": 830037530757.6565,
+        "fully_diluted_market_cap": 830037530757.6565,
+        "circulating_supply": 18992543,
+        "total_supply": 18992543,
+        "max_supply": 21000000
+    },
+    {
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "market_cap": 370983597439.3868,
+        "fully_diluted_market_cap": 370983597439.3868,
+        "circulating_supply": 120092442.499,
+        "total_supply": 120092442.499,
+        "max_supply": null
+    },
+    {
+        "name": "BNB",
+        "symbol": "BNB",
+        "market_cap": 68120189961.60053,
+        "fully_diluted_market_cap": 68120189961.60053,
+        "circulating_supply": 165116760.89,
+        "total_supply": 165116760.89,
+        "max_supply": 165116760
+    },
+    {
+        "name": "XRP",
+        "symbol": "XRP",
+        "market_cap": 40440779990.51027,
+        "fully_diluted_market_cap": 40440779990.51027,
+        "circulating_supply": 48121609012,
+        "total_supply": 99989656524,
+        "max_supply": 100000000000
+    },
+    {
+        "name": "Cardano",
+        "symbol": "ADA",
+        "market_cap": 39338686193.34584,
+        "fully_diluted_market_cap": 39338686193.34584,
+        "circulating_supply": 33713300597.99,
+        "total_supply": 34239675266.895,
+        "max_supply": 45000000000
+    },
+    {
+        "name": "Terra",
+        "symbol": "LUNA",
+        "market_cap": 33761259576.395287,
+        "fully_diluted_market_cap": 33761259576.395287,
+        "circulating_supply": 360357815.9152047,
+        "total_supply": 757652218.161305,
+        "max_supply": null
+    },
+    {
+        "name": "Solana",
+        "symbol": "SOL",
+        "market_cap": 32708658514.326015,
+        "fully_diluted_market_cap": 32708658514.326015,
+        "circulating_supply": 322758613.6050946,
+        "total_supply": 511616946.142289,
+        "max_supply": null
+    },
+    {
+        "name": "Avalanche",
+        "symbol": "AVAX",
+        "market_cap": 23262684570.785748,
+        "fully_diluted_market_cap": 23262684570.785748,
+        "circulating_supply": 267265836.07994467,
+        "total_supply": 395891289.9134107,
+        "max_supply": null
+    },
+    {
+        "name": "Polkadot",
+        "symbol": "DOT",
+        "market_cap": 20734670899.410496,
+        "fully_diluted_market_cap": 20734670899.410496,
+        "circulating_supply": 987579314.957085,
+        "total_supply": 1103303471.382273,
+        "max_supply": null
+    },
+    {
+        "name": "Dogecoin",
+        "symbol": "DOGE",
+        "market_cap": 18060010123.94929,
+        "fully_diluted_market_cap": 18060010123.94929,
+        "circulating_supply": 132670764299.89409,
+        "total_supply": 132670764299.89409,
+        "max_supply": null
+    },
+    {
+        "name": "Binance USD",
+        "symbol": "BUSD",
+        "market_cap": 17667821216.761684,
+        "fully_diluted_market_cap": 17667821216.761684,
+        "circulating_supply": 17657279615.319256,
+        "total_supply": 17657279615.319256,
+        "max_supply": null
+    },
+    {
+        "name": "TerraUSD",
+        "symbol": "UST",
+        "market_cap": 15861631183.468235,
+        "fully_diluted_market_cap": 15861631183.468235,
+        "circulating_supply": 15805617277.967602,
+        "total_supply": 15805617277.967602,
+        "max_supply": null
+    },
+    {
+        "name": "Shiba Inu",
+        "symbol": "SHIB",
+        "market_cap": 13643190684.147963,
+        "fully_diluted_market_cap": 13643190684.147963,
+        "circulating_supply": 549063278876301.94,
+        "total_supply": 589735030408322.8,
+        "max_supply": null
+    },
+    {
+        "name": "Polygon",
+        "symbol": "MATIC",
+        "market_cap": 12551755868.580088,
+        "fully_diluted_market_cap": 12551755868.580088,
+        "circulating_supply": 7701069510.62,
+        "total_supply": 10000000000,
+        "max_supply": 10000000000
+    },
+    {
+        "name": "Wrapped Bitcoin",
+        "symbol": "WBTC",
+        "market_cap": 11965642738.639528,
+        "fully_diluted_market_cap": 11965642738.639528,
+        "circulating_supply": 274330.35609758,
+        "total_supply": 274330.35609758,
+        "max_supply": null
+    },
+    {
+        "name": "Cronos",
+        "symbol": "CRO",
+        "market_cap": 11213811351.78481,
+        "fully_diluted_market_cap": 11213811351.78481,
+        "circulating_supply": 25263013692,
+        "total_supply": 30263013692,
+        "max_supply": 30263013692
+    },
+    {
+        "name": "Dai",
+        "symbol": "DAI",
+        "market_cap": 9799874995.298773,
+        "fully_diluted_market_cap": 9799874995.298773,
+        "circulating_supply": 9804649305.423452,
+        "total_supply": 9804649305.423452,
+        "max_supply": null
+    },
+    {
+        "name": "Litecoin",
+        "symbol": "LTC",
+        "market_cap": 8617877867.475466,
+        "fully_diluted_market_cap": 8617877867.475466,
+        "circulating_supply": 69913993.77791464,
+        "total_supply": 84000000,
+        "max_supply": 84000000
+    },
+    {
+        "name": "NEAR Protocol",
+        "symbol": "NEAR",
+        "market_cap": 8202523749.919343,
+        "fully_diluted_market_cap": 8202523749.919343,
+        "circulating_supply": 660209375,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "Cosmos",
+        "symbol": "ATOM",
+        "market_cap": 8193406271.739849,
+        "fully_diluted_market_cap": 8193406271.739849,
+        "circulating_supply": 286370297,
+        "total_supply": 0,
+        "max_supply": null
+    },
+    {
+        "name": "Chainlink",
+        "symbol": "LINK",
+        "market_cap": 7588431640.613806,
+        "fully_diluted_market_cap": 7588431640.613806,
+        "circulating_supply": 467009549.5205637,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "Uniswap",
+        "symbol": "UNI",
+        "market_cap": 7188572484.377226,
+        "fully_diluted_market_cap": 7188572484.377226,
+        "circulating_supply": 688975272.6440035,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "Bitcoin Cash",
+        "symbol": "BCH",
+        "market_cap": 6852307681.705463,
+        "fully_diluted_market_cap": 6852307681.705463,
+        "circulating_supply": 19017381.25,
+        "total_supply": 19017381.25,
+        "max_supply": 21000000
+    },
+    {
+        "name": "TRON",
+        "symbol": "TRX",
+        "market_cap": 6634533574.164303,
+        "fully_diluted_market_cap": 6634533574.164303,
+        "circulating_supply": 101702753859.00534,
+        "total_supply": 101702775508.91699,
+        "max_supply": null
+    },
+    {
+        "name": "FTX Token",
+        "symbol": "FTT",
+        "market_cap": 6550235674.025682,
+        "fully_diluted_market_cap": 6550235674.025682,
+        "circulating_supply": 137385327.51874372,
+        "total_supply": 333254663.5859715,
+        "max_supply": 352170015
+    },
+    {
+        "name": "Ethereum Classic",
+        "symbol": "ETC",
+        "market_cap": 6004266448.669609,
+        "fully_diluted_market_cap": 6004266448.669609,
+        "circulating_supply": 133758911.96946803,
+        "total_supply": 210700000,
+        "max_supply": 210700000
+    },
+    {
+        "name": "Algorand",
+        "symbol": "ALGO",
+        "market_cap": 5766576374.962786,
+        "fully_diluted_market_cap": 5766576374.962786,
+        "circulating_supply": 6627725911.802041,
+        "total_supply": 7063083714.110712,
+        "max_supply": 10000000000
+    },
+    {
+        "name": "UNUS SED LEO",
+        "symbol": "LEO",
+        "market_cap": 5743089479.957426,
+        "fully_diluted_market_cap": 5743089479.957426,
+        "circulating_supply": 953954130,
+        "total_supply": 985239504,
+        "max_supply": null
+    },
+    {
+        "name": "Stellar",
+        "symbol": "XLM",
+        "market_cap": 5263603722.198596,
+        "fully_diluted_market_cap": 5263603722.198596,
+        "circulating_supply": 24650265441.29838,
+        "total_supply": 50001788061.14908,
+        "max_supply": 50001806812
+    },
+    {
+        "name": "Decentraland",
+        "symbol": "MANA",
+        "market_cap": 4842523547.645222,
+        "fully_diluted_market_cap": 4842523547.645222,
+        "circulating_supply": 1840823668.0361848,
+        "total_supply": 2193731227.320146,
+        "max_supply": null
+    },
+    {
+        "name": "Bitcoin BEP2",
+        "symbol": "BTCB",
+        "market_cap": 4582028826.05276,
+        "fully_diluted_market_cap": 4582028826.05276,
+        "circulating_supply": 105131.45365715,
+        "total_supply": 112501,
+        "max_supply": null
+    },
+    {
+        "name": "Hedera",
+        "symbol": "HBAR",
+        "market_cap": 4351208803.634003,
+        "fully_diluted_market_cap": 4351208803.634003,
+        "circulating_supply": 19565356900.654297,
+        "total_supply": 50000000000,
+        "max_supply": 50000000000
+    },
+    {
+        "name": "Internet Computer",
+        "symbol": "ICP",
+        "market_cap": 4171911014.130683,
+        "fully_diluted_market_cap": 4171911014.130683,
+        "circulating_supply": 216012968.44545418,
+        "total_supply": 478917124.468029,
+        "max_supply": null
+    },
+    {
+        "name": "Elrond",
+        "symbol": "EGLD",
+        "market_cap": 4131127111.0034323,
+        "fully_diluted_market_cap": 4131127111.0034323,
+        "circulating_supply": 21689452.71175563,
+        "total_supply": 23016298,
+        "max_supply": 31415926
+    },
+    {
+        "name": "Axie Infinity",
+        "symbol": "AXS",
+        "market_cap": 4094249951.175884,
+        "fully_diluted_market_cap": 4094249951.175884,
+        "circulating_supply": 60907500,
+        "total_supply": 270000000,
+        "max_supply": 270000000
+    },
+    {
+        "name": "The Sandbox",
+        "symbol": "SAND",
+        "market_cap": 3853242596.6374335,
+        "fully_diluted_market_cap": 3853242596.6374335,
+        "circulating_supply": 1139993229.2233226,
+        "total_supply": 3000000000,
+        "max_supply": 3000000000
+    },
+    {
+        "name": "ApeCoin",
+        "symbol": "APE",
+        "market_cap": 3737979155.125976,
+        "fully_diluted_market_cap": 3737979155.125976,
+        "circulating_supply": 277500000,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "VeChain",
+        "symbol": "VET",
+        "market_cap": 3727216656.335786,
+        "fully_diluted_market_cap": 3727216656.335786,
+        "circulating_supply": 64315576989,
+        "total_supply": 86712634466,
+        "max_supply": 86712634466
+    },
+    {
+        "name": "Monero",
+        "symbol": "XMR",
+        "market_cap": 3657792744.0409493,
+        "fully_diluted_market_cap": 3657792744.0409493,
+        "circulating_supply": 18097416.76239875,
+        "total_supply": 18097416.76239875,
+        "max_supply": null
+    },
+    {
+        "name": "Filecoin",
+        "symbol": "FIL",
+        "market_cap": 3512871159.704061,
+        "fully_diluted_market_cap": 3512871159.704061,
+        "circulating_supply": 181136873,
+        "total_supply": 181136873,
+        "max_supply": null
+    },
+    {
+        "name": "Waves",
+        "symbol": "WAVES",
+        "market_cap": 3399114132.0798306,
+        "fully_diluted_market_cap": 3399114132.0798306,
+        "circulating_supply": 107819758,
+        "total_supply": 107819758,
+        "max_supply": null
+    },
+    {
+        "name": "Fantom",
+        "symbol": "FTM",
+        "market_cap": 3391808919.0831547,
+        "fully_diluted_market_cap": 3391808919.0831547,
+        "circulating_supply": 2545006273,
+        "total_supply": 2545006273,
+        "max_supply": 3175000000
+    },
+    {
+        "name": "Theta Network",
+        "symbol": "THETA",
+        "market_cap": 3277030837.1236596,
+        "fully_diluted_market_cap": 3277030837.1236596,
+        "circulating_supply": 1000000000,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "Klaytn",
+        "symbol": "KLAY",
+        "market_cap": 3152778862.1950393,
+        "fully_diluted_market_cap": 3152778862.1950393,
+        "circulating_supply": 2762011861.6,
+        "total_supply": 10782297980.8,
+        "max_supply": null
+    },
+    {
+        "name": "Tezos",
+        "symbol": "XTZ",
+        "market_cap": 3115373591.784648,
+        "fully_diluted_market_cap": 3115373591.784648,
+        "circulating_supply": 888572090.29302,
+        "total_supply": 910384235.947069,
+        "max_supply": null
+    },
+    {
+        "name": "Helium",
+        "symbol": "HNT",
+        "market_cap": 2839787063.805848,
+        "fully_diluted_market_cap": 2839787063.805848,
+        "circulating_supply": 113904704.20834754,
+        "total_supply": 223000000,
+        "max_supply": 223000000
+    },
+    {
+        "name": "THORChain",
+        "symbol": "RUNE",
+        "market_cap": 2760544360.579941,
+        "fully_diluted_market_cap": 2760544360.579941,
+        "circulating_supply": 330688061.33445597,
+        "total_supply": 334937974.91478544,
+        "max_supply": 500000000
+    },
+    {
+        "name": "Zcash",
+        "symbol": "ZEC",
+        "market_cap": 2599405297.275539,
+        "fully_diluted_market_cap": 2599405297.275539,
+        "circulating_supply": 14016381.25,
+        "total_supply": 14016381.25,
+        "max_supply": 21000000
+    },
+    {
+        "name": "EOS",
+        "symbol": "EOS",
+        "market_cap": 2456784791.8162694,
+        "fully_diluted_market_cap": 2456784791.8162694,
+        "circulating_supply": 983717027.0346,
+        "total_supply": 1050303252.4158,
+        "max_supply": null
+    },
+    {
+        "name": "Flow",
+        "symbol": "FLOW",
+        "market_cap": 2306121549.9331365,
+        "fully_diluted_market_cap": 2306121549.9331365,
+        "circulating_supply": 356458777,
+        "total_supply": 1378211739,
+        "max_supply": null
+    },
+    {
+        "name": "IOTA",
+        "symbol": "MIOTA",
+        "market_cap": 2293161055.140249,
+        "fully_diluted_market_cap": 2293161055.140249,
+        "circulating_supply": 2779530283,
+        "total_supply": 2779530283,
+        "max_supply": 2779530283
+    },
+    {
+        "name": "Aave",
+        "symbol": "AAVE",
+        "market_cap": 2251244887.3811502,
+        "fully_diluted_market_cap": 2251244887.3811502,
+        "circulating_supply": 13654092.21267386,
+        "total_supply": 16000000,
+        "max_supply": 16000000
+    },
+    {
+        "name": "The Graph",
+        "symbol": "GRT",
+        "market_cap": 2028619277.106501,
+        "fully_diluted_market_cap": 2028619277.106501,
+        "circulating_supply": 4715735200,
+        "total_supply": 10000000000,
+        "max_supply": 10057044431
+    },
+    {
+        "name": "Maker",
+        "symbol": "MKR",
+        "market_cap": 1998828659.5838943,
+        "fully_diluted_market_cap": 1998828659.5838943,
+        "circulating_supply": 977631.03695089,
+        "total_supply": 977631.03695089,
+        "max_supply": 1005577
+    },
+    {
+        "name": "PancakeSwap",
+        "symbol": "CAKE",
+        "market_cap": 1960191728.67637,
+        "fully_diluted_market_cap": 1960191728.67637,
+        "circulating_supply": 277630404.9862454,
+        "total_supply": 685690892.408832,
+        "max_supply": null
+    },
+    {
+        "name": "Harmony",
+        "symbol": "ONE",
+        "market_cap": 1789166126.7060738,
+        "fully_diluted_market_cap": 1789166126.7060738,
+        "circulating_supply": 11834834932.100664,
+        "total_supply": 13395349932.10068,
+        "max_supply": null
+    },
+    {
+        "name": "Stacks",
+        "symbol": "STX",
+        "market_cap": 1786366630.7149618,
+        "fully_diluted_market_cap": 1786366630.7149618,
+        "circulating_supply": 1304446842.204909,
+        "total_supply": 1352464600,
+        "max_supply": 1818000000
+    },
+    {
+        "name": "Gala",
+        "symbol": "GALA",
+        "market_cap": 1776699392.4878204,
+        "fully_diluted_market_cap": 1776699392.4878204,
+        "circulating_supply": 6977205436,
+        "total_supply": 35240112493,
+        "max_supply": null
+    },
+    {
+        "name": "BitTorrent-New",
+        "symbol": "BTT",
+        "market_cap": 1760838761.1765094,
+        "fully_diluted_market_cap": 1760838761.1765094,
+        "circulating_supply": 923767696429000,
+        "total_supply": 990000000000000,
+        "max_supply": null
+    },
+    {
+        "name": "Bitcoin SV",
+        "symbol": "BSV",
+        "market_cap": 1712638491.5875084,
+        "fully_diluted_market_cap": 1712638491.5875084,
+        "circulating_supply": 19013151.64423905,
+        "total_supply": 19013151.64423905,
+        "max_supply": 21000000
+    },
+    {
+        "name": "Neo",
+        "symbol": "NEO",
+        "market_cap": 1699043579.4794724,
+        "fully_diluted_market_cap": 1699043579.4794724,
+        "circulating_supply": 70538831,
+        "total_supply": 100000000,
+        "max_supply": 100000000
+    },
+    {
+        "name": "eCash",
+        "symbol": "XEC",
+        "market_cap": 1580175224.7052681,
+        "fully_diluted_market_cap": 1580175224.7052681,
+        "circulating_supply": 19013179673313,
+        "total_supply": 18899704673313,
+        "max_supply": 21000000000000
+    },
+    {
+        "name": "Quant",
+        "symbol": "QNT",
+        "market_cap": 1537576091.398915,
+        "fully_diluted_market_cap": 1537576091.398915,
+        "circulating_supply": 12072738,
+        "total_supply": 14612493.080826,
+        "max_supply": 14612493
+    },
+    {
+        "name": "KuCoin Token",
+        "symbol": "KCS",
+        "market_cap": 1506780926.3418717,
+        "fully_diluted_market_cap": 1506780926.3418717,
+        "circulating_supply": 80118638,
+        "total_supply": 170118638,
+        "max_supply": 170118638
+    },
+    {
+        "name": "Enjin Coin",
+        "symbol": "ENJ",
+        "market_cap": 1422075555.88702,
+        "fully_diluted_market_cap": 1422075555.88702,
+        "circulating_supply": 872224705.567558,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "Huobi Token",
+        "symbol": "HT",
+        "market_cap": 1404932182.6194623,
+        "fully_diluted_market_cap": 1404932182.6194623,
+        "circulating_supply": 155673013.25441208,
+        "total_supply": 500000000,
+        "max_supply": 500000000
+    },
+    {
+        "name": "Loopring",
+        "symbol": "LRC",
+        "market_cap": 1399218089.3120682,
+        "fully_diluted_market_cap": 1399218089.3120682,
+        "circulating_supply": 1329675414.1492386,
+        "total_supply": 1373873440.4424574,
+        "max_supply": 1374513896
+    },
+    {
+        "name": "Kusama",
+        "symbol": "KSM",
+        "market_cap": 1387721670.6424317,
+        "fully_diluted_market_cap": 1387721670.6424317,
+        "circulating_supply": 8470098.05726206,
+        "total_supply": 9651217.45126206,
+        "max_supply": null
+    },
+    {
+        "name": "TrueUSD",
+        "symbol": "TUSD",
+        "market_cap": 1361771680.0947852,
+        "fully_diluted_market_cap": 1361771680.0947852,
+        "circulating_supply": 1362040385.4502616,
+        "total_supply": 1362040385.4502616,
+        "max_supply": null
+    },
+    {
+        "name": "Dash",
+        "symbol": "DASH",
+        "market_cap": 1344548400.2127438,
+        "fully_diluted_market_cap": 1344548400.2127438,
+        "circulating_supply": 10639082.10402003,
+        "total_supply": 10639082.10402003,
+        "max_supply": 18900000
+    },
+    {
+        "name": "Celo",
+        "symbol": "CELO",
+        "market_cap": 1319100454.6572273,
+        "fully_diluted_market_cap": 1319100454.6572273,
+        "circulating_supply": 427388610,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "Chiliz",
+        "symbol": "CHZ",
+        "market_cap": 1312746737.9400268,
+        "fully_diluted_market_cap": 1312746737.9400268,
+        "circulating_supply": 6000316458.269583,
+        "total_supply": 8888888888,
+        "max_supply": 8888888888
+    },
+    {
+        "name": "Nexo",
+        "symbol": "NEXO",
+        "market_cap": 1297659479.4370522,
+        "fully_diluted_market_cap": 1297659479.4370522,
+        "circulating_supply": 560000011,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "OKB",
+        "symbol": "OKB",
+        "market_cap": 1274351161.0371912,
+        "fully_diluted_market_cap": 1274351161.0371912,
+        "circulating_supply": 60000000,
+        "total_supply": 300000000,
+        "max_supply": null
+    },
+    {
+        "name": "Basic Attention Token",
+        "symbol": "BAT",
+        "market_cap": 1271326830.1982207,
+        "fully_diluted_market_cap": 1271326830.1982207,
+        "circulating_supply": 1496902651.4473505,
+        "total_supply": 1500000000,
+        "max_supply": 1500000000
+    },
+    {
+        "name": "Convex Finance",
+        "symbol": "CVX",
+        "market_cap": 1197573473.7434392,
+        "fully_diluted_market_cap": 1197573473.7434392,
+        "circulating_supply": 54932944.46250513,
+        "total_supply": 86944245.88189994,
+        "max_supply": 100000000
+    },
+    {
+        "name": "Amp",
+        "symbol": "AMP",
+        "market_cap": 1135715479.847634,
+        "fully_diluted_market_cap": 1135715479.847634,
+        "circulating_supply": 42227702186,
+        "total_supply": 99213408535,
+        "max_supply": 92547638199
+    },
+    {
+        "name": "Mina",
+        "symbol": "MINA",
+        "market_cap": 1132605494.200979,
+        "fully_diluted_market_cap": 1132605494.200979,
+        "circulating_supply": 429589102.84003925,
+        "total_supply": 824104972,
+        "max_supply": null
+    },
+    {
+        "name": "Curve DAO Token",
+        "symbol": "CRV",
+        "market_cap": 1123216591.5923455,
+        "fully_diluted_market_cap": 1123216591.5923455,
+        "circulating_supply": 466423583.12258494,
+        "total_supply": 1713893665.0360687,
+        "max_supply": 3303030299
+    },
+    {
+        "name": "Arweave",
+        "symbol": "AR",
+        "market_cap": 1099888962.979631,
+        "fully_diluted_market_cap": 1099888962.979631,
+        "circulating_supply": 33394701,
+        "total_supply": 63190435,
+        "max_supply": 66000000
+    },
+    {
+        "name": "Kadena",
+        "symbol": "KDA",
+        "market_cap": 1081931415.6233082,
+        "fully_diluted_market_cap": 1081931415.6233082,
+        "circulating_supply": 171287601.11586,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    },
+    {
+        "name": "NEM",
+        "symbol": "XEM",
+        "market_cap": 982977281.2108114,
+        "fully_diluted_market_cap": 982977281.2108114,
+        "circulating_supply": 8999999999,
+        "total_supply": 8999999999,
+        "max_supply": 8999999999
+    },
+    {
+        "name": "Pax Dollar",
+        "symbol": "USDP",
+        "market_cap": 949619650.6885821,
+        "fully_diluted_market_cap": 949619650.6885821,
+        "circulating_supply": 945642940.11,
+        "total_supply": 945642940.11,
+        "max_supply": null
+    },
+    {
+        "name": "Oasis Network",
+        "symbol": "ROSE",
+        "market_cap": 944934391.2084917,
+        "fully_diluted_market_cap": 944934391.2084917,
+        "circulating_supply": 3493014306.28,
+        "total_supply": 10000000000,
+        "max_supply": 10000000000
+    },
+    {
+        "name": "Theta Fuel",
+        "symbol": "TFUEL",
+        "market_cap": 932331384.5844705,
+        "fully_diluted_market_cap": 932331384.5844705,
+        "circulating_supply": 5301214400,
+        "total_supply": 5301214400,
+        "max_supply": null
+    },
+    {
+        "name": "IoTeX",
+        "symbol": "IOTX",
+        "market_cap": 883790706.7254833,
+        "fully_diluted_market_cap": 883790706.7254833,
+        "circulating_supply": 9540779324.30788,
+        "total_supply": 9626124332.32,
+        "max_supply": 10000000000
+    },
+    {
+        "name": "Holo",
+        "symbol": "HOT",
+        "market_cap": 828698118.5684019,
+        "fully_diluted_market_cap": 828698118.5684019,
+        "circulating_supply": 173289911898.29456,
+        "total_supply": 177619433541.14133,
+        "max_supply": null
+    },
+    {
+        "name": "Decred",
+        "symbol": "DCR",
+        "market_cap": 813283968.6428634,
+        "fully_diluted_market_cap": 813283968.6428634,
+        "circulating_supply": 13874382.83255249,
+        "total_supply": 13874382.83255249,
+        "max_supply": 21000000
+    },
+    {
+        "name": "Secret",
+        "symbol": "SCRT",
+        "market_cap": 807905346.3451693,
+        "fully_diluted_market_cap": 807905346.3451693,
+        "circulating_supply": 163295557,
+        "total_supply": 190165060,
+        "max_supply": null
+    },
+    {
+        "name": "Symbol",
+        "symbol": "XYM",
+        "market_cap": 798371022.5849662,
+        "fully_diluted_market_cap": 798371022.5849662,
+        "circulating_supply": 5582460004.558402,
+        "total_supply": 7967988929.50477,
+        "max_supply": 8999999999
+    },
+    {
+        "name": "Neutrino USD",
+        "symbol": "USDN",
+        "market_cap": 791785231.0738332,
+        "fully_diluted_market_cap": 791785231.0738332,
+        "circulating_supply": 794025255.991799,
+        "total_supply": 794025854.808309,
+        "max_supply": null
+    },
+    {
+        "name": "Compound",
+        "symbol": "COMP",
+        "market_cap": 781042370.9508132,
+        "fully_diluted_market_cap": 781042370.9508132,
+        "circulating_supply": 6650511.77296479,
+        "total_supply": 10000000,
+        "max_supply": 10000000
+    },
+    {
+        "name": "Celsius",
+        "symbol": "CEL",
+        "market_cap": 779139318.4946142,
+        "fully_diluted_market_cap": 779139318.4946142,
+        "circulating_supply": 238863519.826,
+        "total_supply": 695658160,
+        "max_supply": 695658160
+    },
+    {
+        "name": "BORA",
+        "symbol": "BORA",
+        "market_cap": 767404616.1822464,
+        "fully_diluted_market_cap": 767404616.1822464,
+        "circulating_supply": 861250000,
+        "total_supply": 1205750000,
+        "max_supply": null
+    },
+    {
+        "name": "SXP",
+        "symbol": "SXP",
+        "market_cap": 768696821.2780546,
+        "fully_diluted_market_cap": 768696821.2780546,
+        "circulating_supply": 479937576,
+        "total_supply": 520737576,
+        "max_supply": null
+    },
+    {
+        "name": "Qtum",
+        "symbol": "QTUM",
+        "market_cap": 766507950.1682786,
+        "fully_diluted_market_cap": 766507950.1682786,
+        "circulating_supply": 99060428.7260568,
+        "total_supply": 103944501,
+        "max_supply": 107822406
+    },
+    {
+        "name": "yearn.finance",
+        "symbol": "YFI",
+        "market_cap": 757224585.1315722,
+        "fully_diluted_market_cap": 757224585.1315722,
+        "circulating_supply": 36637.72122588,
+        "total_supply": 36666,
+        "max_supply": 36666
+    },
+    {
+        "name": "Bitcoin Gold",
+        "symbol": "BTG",
+        "market_cap": 739174642.6758195,
+        "fully_diluted_market_cap": 739174642.6758195,
+        "circulating_supply": 17513923.589,
+        "total_supply": 17513923.589,
+        "max_supply": 21000000
+    },
+    {
+        "name": "OMG Network",
+        "symbol": "OMG",
+        "market_cap": 719222936.4168011,
+        "fully_diluted_market_cap": 719222936.4168011,
+        "circulating_supply": 140245398.24513277,
+        "total_supply": 140245398.24513277,
+        "max_supply": 140245399
+    },
+    {
+        "name": "Anchor Protocol",
+        "symbol": "ANC",
+        "market_cap": 691722761.9010712,
+        "fully_diluted_market_cap": 691722761.9010712,
+        "circulating_supply": 267055224.178613,
+        "total_supply": 1000000000,
+        "max_supply": 1000000000
+    }
+]
