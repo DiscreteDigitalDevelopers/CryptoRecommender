@@ -1,6 +1,6 @@
 import numpy as np
 import sys
-from datetime import dt
+from datetime import datetime as dt
 
 class Crypto:
 	def __init__(self, ticker, price = None, sentiment = None):
@@ -18,11 +18,11 @@ class Crypto:
 			self.sentiment = sentiment
 
 	def __repr__(self):
-		return f'{self.ticker}: ${last_price[1]:.2f} at {self.from_unix(last_price[0])}'
+		return f'{self.ticker}: ${float(self.last_price[1]):.2f} at {self.from_unix(self.last_price[0])}'
 
 	def update_price(self, timestamp, p):
 		self.price[timestamp] = p
-		last_price = (timestamp, p)
+		self.last_price = (timestamp, p)
 
 	def update_sentiment(self, timestamp, s):
 		self.sentiment[timestamp] = s
@@ -43,4 +43,4 @@ class Crypto:
 
 	@staticmethod
 	def from_unix(unix_time):
-		return dt.from_timestamp(unix_time)
+		return dt.fromtimestamp(unix_time)

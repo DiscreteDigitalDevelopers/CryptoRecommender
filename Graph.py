@@ -70,6 +70,9 @@ class Graph:
 		for node in nodes:
 			self.remove_node(node)
 
+	def update_node(self, old_node, new_node):
+		self.adj_list[new_node] = self.adj_list[old_node]
+		self.remove_node(old_node)
 
 	def find_connected_components(self):
 		def DFS(self, u):
