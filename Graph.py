@@ -16,13 +16,10 @@ class Graph:
 		out = ''
 		for i, row in self.adj_list.items():
 			row = sorted(row)
-			if(len(row) == 0):
-				out += str(i)+': {}\n'
-			else:
-				out += str(i)+': {'
-				for j in row:
-					out += str(j)+', '
-				out += '}\n'
+			out += str(i)+': {'
+			for j in row:
+				out += str(j)+', '
+			out += '}\n'
 		out = out.replace(', }','}')
 		return out
 
@@ -39,7 +36,10 @@ class Graph:
 		if u not in self.adj_list:
 			self.adj_list[u] = set()
 
-	def add_edge(self, u, v):
+	def add_edge(self, u, v, add_nodes = False):
+		if add_nodes:
+			self.add_node(u)
+			self.add_node(v)
 		self.adj_list[u].add(v)
 
 	def has_edge(self, u, v):
@@ -70,14 +70,15 @@ class Graph:
 		for node in nodes:
 			self.remove_node(node)
 
-	def DFS(self, u):
-		self.visited[u] = True
-		self.comp.append(u)
-		for i in self.adj_list[u]:
-			if not self.visited[i]:
-				self.DFS(i)
 
 	def find_connected_components(self):
+		def DFS(self, u):
+			self.visited[u] = True
+			self.comp.append(u)
+			for i in self.adj_list[u]:
+				if not self.visited[i]:
+					DFS(i)
+
 		self.cc = []
 		self.visited  = [False for i in range(max(self.adj_list.keys())+1)]
 		for i in self.adj_list.keys():
@@ -85,7 +86,7 @@ class Graph:
 				self.comp = []
 				self.DFS(i)
 				self.cc.append(sorted(self.comp))
-		self.cc.sort()
+		self.cc.sort(key = lambda x: len(x))
 		return self.cc
 
 	def largest_connected_component(self):
@@ -94,6 +95,7 @@ class Graph:
 			if len(comp) > len(l_cc):
 				l_cc = comp
 		return l_cc
+
 	def plot_degree_dist(self, filename):
 		degrees = []
 		for i, row in self.adj_list.items():
@@ -136,7 +138,7 @@ class Graph:
 
 	def edges_to_file(self, filename):
 		f = open(filename, 'w')
-		s = 'Source Target\n'
+		s = ''
 		for i, row in self.adj_list.items():
 			for j in row:
 				s += f'{i} {j}\n'
