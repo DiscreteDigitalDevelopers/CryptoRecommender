@@ -27,9 +27,15 @@ class Crypto:
 	def update_data(self, timestamp, d):
 		self.data[timestamp] = d
 
+	def get_timestamp_list(self):
+		return np.array([i for i in self.price.keys()])
+
+	def get_price_list(self):
+		return np.array([i for _, i in self.price.items()])
+
 	def plot_price(self, filename = None):
-		x = [i for i in self.price.keys()]
-		y = [i for _, i in self.price.items()]
+		x = self.get_timestamp_list()
+		y = self.get_price_list()
 		plt.plot(x, y)
 		plt.title(f'Price History of {self.ticker}')
 		if filename is None:
@@ -38,7 +44,7 @@ class Crypto:
 			plt.savefig(filename)
 
 	def normalized_price(self):
-		y = np.array([i for _, i in self.price.items()])
+		y = self.get_price_list()
 		y /= np.max(y)
 		return y
 

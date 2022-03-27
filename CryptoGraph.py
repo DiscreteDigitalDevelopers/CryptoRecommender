@@ -9,6 +9,8 @@ from os import listdir
 import csv
 import sys
 import matplotlib.pyplot as plt
+from scipy.stats import linregress
+import numpy as np
 
 class CryptoGraph(Graph):
 	def __init__(self):
@@ -36,13 +38,23 @@ class CryptoGraph(Graph):
 			data = requests.get(stub + node.ticker).json()
 			node.update_price(int(time.time()), data['price'])
 
-	def calculate_correlations(self):
+	def calculate_regressions(self, plot_best = False):
+		regressions = []
 		for i, n1 in enumerate(self.adj_list.keys()):
 			for j, n2 in enumerate(self.adj_list.keys()):
 				if i <= j:
 					continue
-				norm_price1 = n1.normalized_price()
-				norm_price2 = n2.normalized_price()
-				plt.scatter(norm_price1, norm_price2)
-				plt.show()
-				sys.exit(0)
+				x1 = n1.normalized_price()
+				x2 = n2.normalized_price()
+				regressions.append((n1, n2, linregress(x1, x2)))
+		regressions.sort(reverse = True, key = lambda x: x[2][2])
+		if plot_best:
+			best = regressions[0]
+			x1 = best[0].normalized_price()
+			x2 = best[1].normalized_price()
+			plt.scatter(x1, x2)
+			x = np.linspace(0, 1, 100)
+			y = best[2][0]*x + best[2][1]
+			plt.plot(x, y)
+			plt.show()
+		return regressions
