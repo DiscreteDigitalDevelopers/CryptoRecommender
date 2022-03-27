@@ -27,58 +27,34 @@ class Graph:
 		edges = 0
 		for i, row in self.adj_list.items():
 			edges += len(row)
-		return edges//2
+		return edges
 
 	def average_degree(self):
-		return 2*self.num_edges()/len(self)
+		return self.num_edges()/len(self)
 
 	def add_node(self, u):
 		if u not in self.adj_list:
 			self.adj_list[u] = set()
 
-	def add_edge(self, u, v, add_nodes = False):
+	def add_edge(self, u, v, edge, add_nodes = False):
 		if add_nodes:
 			self.add_node(u)
 			self.add_node(v)
-		self.adj_list[u].add(v)
-
-	def has_edge(self, u, v):
-		if v in self.adj_list[u]:
-			return True
-		else:
-			return False
-
-	def remove_edge(self, u, v):
-		self.adj_list[u].discard(v)
+		self.adj_list[u].add((v, edge))
 
 	def get_edges(self):
 		edges = set()
 		for i, row in self.adj_list.items():
 			for j in row:
-				if (j,i) not in edges:
-					edges.add((i,j))
+				edges.add((i,j))
 		return list(edges)
-
-	def remove_node(self, node):
-		if node not in self.adj_list.keys():
-			return
-		for i in self.adj_list[node]:
-			self.adj_list[i].discard(node)
-		del self.adj_list[node]
-
-	def remove_nodes(self, nodes):
-		for node in nodes:
-			self.remove_node(node)
-
-	def update_node(self, old_node, new_node):
-		self.adj_list[new_node] = self.adj_list[old_node]
-		self.remove_node(old_node)
 
 	def find_connected_components(self):
 		def DFS(self, u):
 			self.visited[u] = True
 			self.comp.append(u)
 			for i in self.adj_list[u]:
+				i = i[0]
 				if not self.visited[i]:
 					DFS(i)
 
@@ -163,9 +139,3 @@ class Graph:
 				vals = row.split(': ')[1][1:-2].split(', ')
 				for i in range(len(vals)):
 					self.add_edge(u,int(vals[i]))
-
-	def remove_percent_nodes(self, p):
-		G_removed = self
-		nodes = random.sample(list(G_removed.adj_list.keys()),int(p*len(G_removed)))
-		G_removed.remove_nodes(nodes)
-		return G_removed
