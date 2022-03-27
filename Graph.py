@@ -127,10 +127,12 @@ class Graph:
 
 	def edges_to_file(self, filename):
 		f = open(filename, 'w')
-		s = ''
-		for i, row in self.adj_list.items():
-			for j in row:
-				s += f'{i} {j}\n'
+		s = 'Source Target Weight\n'
+		for x, (i, row) in enumerate(self.adj_list.items()):
+			for p, j in enumerate(sorted(list(row), key = lambda x: x[0])):
+				if p <= x:
+					continue
+				s += f'{i} {j[0]} {j[1]}\n'
 		f.write(s)
 		f.close()
 

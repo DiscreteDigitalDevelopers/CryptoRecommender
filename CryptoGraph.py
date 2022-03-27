@@ -65,9 +65,12 @@ class CryptoGraph(Graph):
 			best = regressions[0]
 			x1 = best[0].normalized_price()
 			x2 = best[1].normalized_price()
-			plt.scatter(x1, x2)
+			plt.scatter(x1, x2, s = 4)
+			plt.xlabel(f'{best[0].ticker}')
+			plt.ylabel(f'{best[1].ticker}')
+			plt.title(f'Best Regression - R^2 = {best[2][2]**2:.4f}')
 			x = np.linspace(0, 1, 100)
 			y = best[2][0]*x + best[2][1]
 			plt.plot(x, y)
-			plt.show()
+			plt.savefig('Images/best_reg.png', dpi = 500)
 		return regressions
