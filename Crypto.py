@@ -3,7 +3,7 @@ import sys
 from datetime import datetime as dt
 
 class Crypto:
-	def __init__(self, ticker, price = None, sentiment = None):
+	def __init__(self, ticker, price = None, data = None):
 		self.ticker = ticker
 		self.last_price = None
 
@@ -12,10 +12,10 @@ class Crypto:
 		else:
 			self.price = price
 
-		if sentiment is None:
-			self.sentiment = {}
+		if data is None:
+			self.data = {}
 		else:
-			self.sentiment = sentiment
+			self.data = data
 
 	def __repr__(self):
 		return f'{self.ticker}: ${float(self.last_price[1]):.2f} at {self.from_unix(self.last_price[0])}'
@@ -24,10 +24,10 @@ class Crypto:
 		self.price[timestamp] = p
 		self.last_price = (timestamp, p)
 
-	def update_sentiment(self, timestamp, s):
-		self.sentiment[timestamp] = s
+	def update_data(self, timestamp, d):
+		self.data[timestamp] = d
 
-	def plot_price(filename = None):
+	def plot_price(self, filename = None):
 		x = [i for i in self.price.keys()]
 		y = [i for _, i in self.price.items()]
 		plt.plot(x, y)
@@ -36,6 +36,11 @@ class Crypto:
 			plt.show()
 		else:
 			plt.savefig(filename)
+
+	def normalized_price(self):
+		y = np.array([i for _, i in self.price.items()])
+		y /= np.max(y)
+		return y
 
 	@staticmethod
 	def to_unix(d):
