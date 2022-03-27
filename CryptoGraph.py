@@ -20,7 +20,7 @@ class CryptoGraph(Graph):
 		for ticker in tickers:
 			self.add_node(Crypto(ticker))
 
-	def init_from_price_hist(self, directory = 'Kline'):
+	def init_from_price_hist(self, directory = 'Kline/filter'):
 		files = listdir(directory)
 		csvs = [f'{directory}/{f}' for f in files if f.endswith('csv')]
 		for c in csvs:
