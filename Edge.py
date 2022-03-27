@@ -1,6 +1,6 @@
 class Edge:
-	def __init__(self):
-		pass
+	def __init__(self, regression_weight = None):
+		self.regression_weight = regression_weight
 
 	def __repr__(self):
-		pass
+		return f'{self.regression_weight:.4f}'

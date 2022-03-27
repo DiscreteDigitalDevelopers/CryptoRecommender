@@ -1,3 +1,5 @@
+from Edge import Edge
+
 import numpy as np
 import sys
 import random
@@ -16,9 +18,9 @@ class Graph:
 		out = ''
 		for i, row in self.adj_list.items():
 			row = sorted(row)
-			out += str(i)+': {'
+			out += f'{i}: {{'
 			for j in row:
-				out += str(j)+', '
+				out += f'({j[0]}, {j[1]}), '
 			out += '}\n'
 		out = out.replace(', }','}')
 		return out
@@ -36,11 +38,13 @@ class Graph:
 		if u not in self.adj_list:
 			self.adj_list[u] = set()
 
-	def add_edge(self, u, v, edge, add_nodes = False):
+	def add_edge(self, u, v, edge, add_nodes = False, undirected = False):
 		if add_nodes:
 			self.add_node(u)
 			self.add_node(v)
 		self.adj_list[u].add((v, edge))
+		if undirected:
+			self.adj_list[v].add((u, edge))
 
 	def get_edges(self):
 		edges = set()
@@ -48,6 +52,12 @@ class Graph:
 			for j in row:
 				edges.add((i,j))
 		return list(edges)
+
+	def get_edge(self, u, v):
+		for i, row in self.adj_list.items():
+			for j in row:
+				if i.ticker == u and j[0].ticker == v:
+					return j
 
 	def find_connected_components(self):
 		def DFS(self, u):
