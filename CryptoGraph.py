@@ -39,6 +39,17 @@ class CryptoGraph(Graph):
 			data = requests.get(stub + node.ticker).json()
 			node.update_price(int(time.time()), data['price'])
 
+	def import_correlation_data(self, filename = 'graph_data/cor_close_vol.csv'):
+		lpp = 970
+		with open(filename, 'r') as f:
+			lines = list(csv.reader(f))[1:]
+			for p in range(len(lines)//lpp):
+				pair_data = {int(lines[x][2]):(float(lines[x][3]), float(lines[x][4])) for x in range(p*lpp, (p+1)*lpp)}
+				t1 = lines[p*lpp][0]
+				t2 = lines[p*lpp][1]
+				edge = self.get_edge(t1, t2)[1]
+				edge.pair_data = pair_data
+
 	def calculate_regressions(self, plot_best = False):
 		regressions = []
 		for i, n1 in enumerate(self.adj_list.keys()):

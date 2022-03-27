@@ -46,13 +46,18 @@ class Graph:
 		if undirected:
 			self.adj_list[v].add((u, edge))
 
-
 	def get_edges(self):
 		edges = set()
 		for i, row in self.adj_list.items():
 			for j in row:
 				edges.add((i,j))
 		return list(edges)
+
+	def get_edge(self, u, v):
+		for i, row in self.adj_list.items():
+			for j in row:
+				if i.ticker == u and j[0].ticker == v:
+					return j
 
 	def find_connected_components(self):
 		def DFS(self, u):
