@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-LIMIT = 150 # limit for calls
-TOP = 100 # top N amount of coins to get
+LIMIT = 550 # limit for calls
+TOP = 500 # top N amount of coins to get
 API_KEY = os.getenv('CMC_KEY')
 
 if __name__ == '__main__':
