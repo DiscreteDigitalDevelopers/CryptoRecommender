@@ -3,9 +3,9 @@ import sys
 from datetime import datetime as dt
 
 class Crypto:
-	def __init__(self, ticker, price = None, data = None):
+	def __init__(self, ticker, price = None, data = None, last_price = None):
 		self.ticker = ticker
-		self.last_price = None
+		self.last_price = last_price
 
 		if price is None:
 			self.price = {}
@@ -18,7 +18,11 @@ class Crypto:
 			self.data = data
 
 	def __repr__(self):
-		return f'{self.ticker}: ${float(self.last_price[1]):.2f} at {self.from_unix(self.last_price[0])}'
+		# return f'{self.ticker}: ${float(self.last_price[1]):.2f} at {self.last_price[0]}'
+		return self.ticker
+
+	def __lt__(self, other):
+		return self.ticker < other.ticker
 
 	def update_price(self, timestamp, p):
 		self.price[timestamp] = p

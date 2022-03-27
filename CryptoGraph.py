@@ -1,5 +1,6 @@
 from Graph import Graph
 from Crypto import Crypto
+from Edge import Edge
 
 import json
 import requests
@@ -26,9 +27,9 @@ class CryptoGraph(Graph):
 		for c in csvs:
 			with open(c, 'r') as f:
 				lines = list(csv.reader(f))[1:]
-				d = {float(l[1]):l[2:] for l in lines}
-				p = {float(l[1]):float(l[5]) for l in lines}
-			self.add_node(Crypto(c.split('/')[-1][:-4], price = p, data = d))
+				d = {int(l[1]):l[2:] for l in lines}
+				p = {int(l[1]):float(l[5]) for l in lines}
+			self.add_node(Crypto(c.split('/')[-1][:-4], price = p, data = d, last_price = (int(lines[-1][1]), float(lines[-1][5]))))
 					
 	def update_prices(self):
 		stub = 'https://api.binance.com/api/v3/ticker/price?symbol='
@@ -47,6 +48,7 @@ class CryptoGraph(Graph):
 				x1 = n1.normalized_price()
 				x2 = n2.normalized_price()
 				regressions.append((n1, n2, linregress(x1, x2)))
+				self.add_edge(n1, n2, Edge(regression_weight = regressions[-1][2][2]), undirected = True)
 		regressions.sort(reverse = True, key = lambda x: x[2][2])
 		if plot_best:
 			best = regressions[0]
