@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  30 APR 2022 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  1 MAY 2022 17:27
 entering extended mode
 **"C:/Users/mnury/Desktop/CSCI-4964/CryptoRecommender/Media/Final Report.tex"
 (C:/Users/mnury/Desktop/CSCI-4964/CryptoRecommender/Media/Final Report.tex
@@ -486,48 +486,48 @@ File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 ) (Final Report.aux)
 \openout1 = `"Final Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 117.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 118.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 117.
+ 118.
 
 (C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 118.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-117.
+118.
 
 (C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 118.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 117.
+ 118.
 
 (C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 118.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 117.
+e 118.
 
 (C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    ... okay on input line 118.
 
 (C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
@@ -613,37 +613,243 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 123.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 24.88pt on input line 123.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 118.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 118.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 119.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 119.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 132.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 20.74pt on input line 147.
-[1{C:/Users/mnury/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+(Font)              scaled to size 12.0pt on input line 126.
+[1
 
+{C:/Users/mnury/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 140.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 140.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 141.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 160.
+[1]
+<tsne_knn.png, id=10, 1156.32pt x 722.7pt>
+File: tsne_knn.png Graphic file (type png)
+<use tsne_knn.png>
+Package pdftex.def Info: tsne_knn.png  used on input line 164.
+(pdftex.def)             Requested size: 346.89868pt x 216.81166pt.
+<dbscan.png, id=12, 1156.32pt x 722.7pt>
+File: dbscan.png Graphic file (type png)
+<use dbscan.png>
+Package pdftex.def Info: dbscan.png  used on input line 167.
+(pdftex.def)             Requested size: 346.89868pt x 216.81166pt.
+ [2 <./tsne_knn.png> <./dbscan.png>]
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
+e 172.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 172.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 172.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.1pt on input line 172.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172
+.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172
+.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+172.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+172.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+172.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 17
+2.
+
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+<best_reg.png, id=18, 462.528pt x 346.896pt>
+File: best_reg.png Graphic file (type png)
+<use best_reg.png>
+Package pdftex.def Info: best_reg.png  used on input line 175.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Overfull \hbox (18.85081pt too wide) in paragraph at lines 175--176
+[][] 
+ []
+
+<worst_reg.png, id=19, 462.528pt x 346.896pt>
+File: worst_reg.png Graphic file (type png)
+<use worst_reg.png>
+Package pdftex.def Info: worst_reg.png  used on input line 179.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Overfull \hbox (18.85081pt too wide) in paragraph at lines 179--180
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--181
+
+ []
+
+<../cor_images/p_800.png, id=20, 462.528pt x 346.896pt>
+File: ../cor_images/p_800.png Graphic file (type png)
+<use ../cor_images/p_800.png>
+Package pdftex.def Info: ../cor_images/p_800.png  used on input line 189.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+<../cor_images/p_890.png, id=21, 462.528pt x 346.896pt>
+File: ../cor_images/p_890.png Graphic file (type png)
+<use ../cor_images/p_890.png>
+Package pdftex.def Info: ../cor_images/p_890.png  used on input line 191.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+
+Overfull \hbox (20.27641pt too wide) in paragraph at lines 188--192
+[] 
+ []
+
+
+Overfull \hbox (20.27641pt too wide) in paragraph at lines 188--192
+[] 
+ []
+
+<../cor_images/p_830.png, id=22, 462.528pt x 346.896pt>
+File: ../cor_images/p_830.png Graphic file (type png)
+<use ../cor_images/p_830.png>
+Package pdftex.def Info: ../cor_images/p_830.png  used on input line 196.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+<../cor_images/p_920.png, id=23, 462.528pt x 346.896pt>
+File: ../cor_images/p_920.png Graphic file (type png)
+<use ../cor_images/p_920.png>
+Package pdftex.def Info: ../cor_images/p_920.png  used on input line 198.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+
+Overfull \hbox (20.27641pt too wide) in paragraph at lines 195--199
+[] 
+ []
+
+
+Overfull \hbox (20.27641pt too wide) in paragraph at lines 195--199
+[] 
+ []
+
+<../cor_images/p_860.png, id=24, 462.528pt x 346.896pt>
+File: ../cor_images/p_860.png Graphic file (type png)
+<use ../cor_images/p_860.png>
+Package pdftex.def Info: ../cor_images/p_860.png  used on input line 203.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+<../cor_images/p_950.png, id=25, 462.528pt x 346.896pt>
+File: ../cor_images/p_950.png Graphic file (type png)
+<use ../cor_images/p_950.png>
+Package pdftex.def Info: ../cor_images/p_950.png  used on input line 205.
+(pdftex.def)             Requested size: 161.88722pt x 121.4154pt.
+
+Overfull \hbox (20.27641pt too wide) in paragraph at lines 202--206
+[] 
+ []
+
+
+Overfull \hbox (20.27641pt too wide) in paragraph at lines 202--206
+[] 
+ []
+
+[3 <./best_reg.png> <./worst_reg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
+[4 <../cor_images/p_800.png> <../cor_images/p_890.png> <../cor_images/p_830.png
+> <../cor_images/p_920.png> <../cor_images/p_860.png> <../cor_images/p_950.png>
 ]
-(Final Report.aux) ) 
+<correlation_graph_small2.png, id=42, 8.8223pt x 8.8223pt>
+File: correlation_graph_small2.png Graphic file (type png)
+<use correlation_graph_small2.png>
+Package pdftex.def Info: correlation_graph_small2.png  used on input line 218.
+(pdftex.def)             Requested size: 227.62204pt x 227.87415pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+[5 <./correlation_graph_small2.png>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
+248.
+(C:\Users\mnury\AppData\Local\Programs\MiKTeX\tex/latex/newtx\t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.95pt on input line 248.
+
+[7] [8] (Final Report.aux) ) 
 Here is how much of TeX's memory you used:
- 10180 strings out of 478864
- 140709 string characters out of 2848660
- 627201 words of memory out of 3000000
- 27968 multiletter control sequences out of 15000+600000
- 423341 words of font info for 35 fonts, out of 8000000 for 9000
+ 10452 strings out of 478864
+ 146208 string characters out of 2848660
+ 638235 words of memory out of 3000000
+ 28179 multiletter control sequences out of 15000+600000
+ 441945 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,11n,80p,481b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
-ps/newtx/ntx-ec-tlf.enc}<C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/newtx/ztmb.pfb><C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/newtx/ztmr.pfb>
-Output written on "Final Report.pdf" (1 page, 104416 bytes).
+ 64i,11n,80p,697b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts
+/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Users/mnury/AppData/Local/Programs/MiKTeX/
+fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<C:/Users/mnury/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/mnury/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/mnury/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/mnury/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/newtx/ztmr.pfb>
+Output written on "Final Report.pdf" (9 pages, 5117374 bytes).
 PDF statistics:
- 17 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

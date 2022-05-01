@@ -26,18 +26,20 @@ class CryptoGraph():
 			self.G.add_node(ticker)
 		self.make_complete()
 
-	def init_from_price_hist(self, directory = 'Kline/filter'):
+	def init_from_price_hist(self, directory = 'Kline/coins'):
 		files = listdir(directory)
 		csvs = [f'{directory}/{f}' for f in files if f.endswith('csv')]
 		for c in csvs:
 			with open(c, 'r') as f:
 				lines = list(csv.reader(f))[1:]
+				if len(lines) < 1000:
+					continue
 				d = {int(l[1]):l[2:] for l in lines}
 				p = {int(l[1]):float(l[5]) for l in lines}
-			node = c.split('/')[-1][:-4]
-			self.G.add_node(node)
-			self.G.nodes[node]['price'] = p
-			self.G.nodes[node]['data'] = d
+				node = c.split('/')[-1][:-4]
+				self.G.add_node(node)
+				self.G.nodes[node]['price'] = p
+				self.G.nodes[node]['data'] = d
 		self.make_complete()
 
 	def import_correlation_data(self, filename = 'graph_data/cor_close_vol.csv'):
@@ -67,31 +69,44 @@ class CryptoGraph():
 		with open(fname) as f:
 			dat = json.load(f)
 			for n in self.G.nodes:
+				found = False
 				for d in dat:
 					if n == f'{d["symbol"]}USDT':
 						self.G.nodes[n]['kmeans_cat'] = d['meta']
+						found = True
 						break
+				if not found:
+					self.G.nodes[n]['kmeans_cat'] = -1
 
 	def get_dbscan_clusters(self, fname = 'scraped/dbscan_categories.json'):
 		with open(fname) as f:
 			dat = json.load(f)
 			for n in self.G.nodes:
+				found = False
 				for d in dat:
 					if n == f'{d["symbol"]}USDT':
 						self.G.nodes[n]['dbscan_cat'] = d['meta']
+						found = True
 						break
+				if not found:
+					self.G.nodes[n]['dbscan_cat'] = -1
 
+	def aggregate_metrics(self, r_weight = 0.8, k_weight = 0.3, d_weight = 0.3):
+		max_agg = 0
+		for n1, n2 in self.G.edges:
+			same_kmeans = self.G.nodes[n1]['kmeans_cat'] == self.G.nodes[n2]['kmeans_cat']
+			same_dbscan = self.G.nodes[n1]['dbscan_cat'] == self.G.nodes[n2]['dbscan_cat']
+			w = r_weight * self.G.edges[n1, n2]['r2'] + k_weight * same_kmeans + d_weight * same_dbscan
+			self.G.edges[n1, n2]['aggregate'] = w
+			if w > max_agg:
+				max_agg = w
 
-		# if plot_best:
-		# 	best = regressions[0]
-		# 	x1 = best[0].normalized_price()
-		# 	x2 = best[1].normalized_price()
-		# 	plt.scatter(x1, x2, s = 4)
-		# 	plt.xlabel(f'{best[0].ticker}')
-		# 	plt.ylabel(f'{best[1].ticker}')
-		# 	plt.title(f'Best Regression - R^2 = {best[2][2]**2:.4f}')
-		# 	x = np.linspace(0, 1, 100)
-		# 	y = best[2][0]*x + best[2][1]
-		# 	plt.plot(x, y)
-		# 	plt.savefig('Images/best_reg.png', dpi = 500)
-		# return regressions
+		for n1, n2 in self.G.edges:
+			self.G.edges[n1, n2]['aggregate'] /= max_agg
+
+	def get_similar_cryptos(self, ticker):
+		sim = []
+		for n in self.G.neighbors(ticker):
+			sim.append((n, self.G.edges[ticker, n]['aggregate']))
+		sim.sort(key = lambda x: x[1], reverse = True)
+		return sim
