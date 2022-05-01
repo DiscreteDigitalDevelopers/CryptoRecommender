@@ -2,24 +2,29 @@ from Graph import Graph
 from Crypto import Crypto
 from Edge import Edge
 
-import json
-import requests
-import time
-import copy
 from os import listdir
 import csv
 import sys
 import matplotlib.pyplot as plt
 from scipy.stats import linregress
 import numpy as np
+from itertools import combinations
+import networkx as nx
+import json
 
-class CryptoGraph(Graph):
+class CryptoGraph():
 	def __init__(self):
 		super(CryptoGraph, self).__init__()
+		self.G = nx.Graph()
+
+	def make_complete(self):
+		for n1, n2 in combinations(self.G.nodes, 2):
+			self.G.add_edge(n1, n2)
 
 	def add_tickers(self, tickers):
 		for ticker in tickers:
-			self.add_node(Crypto(ticker))
+			self.G.add_node(ticker)
+		self.make_complete()
 
 	def init_from_price_hist(self, directory = 'Kline/filter'):
 		files = listdir(directory)
@@ -29,15 +34,11 @@ class CryptoGraph(Graph):
 				lines = list(csv.reader(f))[1:]
 				d = {int(l[1]):l[2:] for l in lines}
 				p = {int(l[1]):float(l[5]) for l in lines}
-			self.add_node(Crypto(c.split('/')[-1][:-4], price = p, data = d, last_price = (int(lines[-1][1]), float(lines[-1][5]))))
-					
-	def update_prices(self):
-		stub = 'https://api.binance.com/api/v3/ticker/price?symbol='
-		nodes = [n for n in self.adj_list.keys()]
-
-		for node in self.adj_list.keys():
-			data = requests.get(stub + node.ticker).json()
-			node.update_price(int(time.time()), data['price'])
+			node = c.split('/')[-1][:-4]
+			self.G.add_node(node)
+			self.G.nodes[node]['price'] = p
+			self.G.nodes[node]['data'] = d
+		self.make_complete()
 
 	def import_correlation_data(self, filename = 'graph_data/cor_close_vol.csv'):
 		lpp = 970
@@ -50,27 +51,47 @@ class CryptoGraph(Graph):
 				edge = self.get_edge(t1, t2)[1]
 				edge.pair_data = pair_data
 
+	@staticmethod
+	def normalize_price(price):
+		y = np.array([i for i in price.values()])
+		y /= np.max(y)
+		return y
+
 	def calculate_regressions(self, plot_best = False):
-		regressions = []
-		for i, n1 in enumerate(self.adj_list.keys()):
-			for j, n2 in enumerate(self.adj_list.keys()):
-				if i <= j:
-					continue
-				x1 = n1.normalized_price()
-				x2 = n2.normalized_price()
-				regressions.append((n1, n2, linregress(x1, x2)))
-				self.add_edge(n1, n2, Edge(regression_weight = regressions[-1][2][2]), undirected = True)
-		regressions.sort(reverse = True, key = lambda x: x[2][2])
-		if plot_best:
-			best = regressions[0]
-			x1 = best[0].normalized_price()
-			x2 = best[1].normalized_price()
-			plt.scatter(x1, x2, s = 4)
-			plt.xlabel(f'{best[0].ticker}')
-			plt.ylabel(f'{best[1].ticker}')
-			plt.title(f'Best Regression - R^2 = {best[2][2]**2:.4f}')
-			x = np.linspace(0, 1, 100)
-			y = best[2][0]*x + best[2][1]
-			plt.plot(x, y)
-			plt.savefig('Images/best_reg.png', dpi = 500)
-		return regressions
+		for n1, n2 in combinations(self.G.nodes, 2):
+			p1 = self.normalize_price(self.G.nodes[n1]['price'])
+			p2 = self.normalize_price(self.G.nodes[n2]['price'])
+			self.G.edges[n1, n2]['r2'] = linregress(p1, p2)[2]**2
+
+	def get_kmeans_clusters(self, fname = 'scraped/categories.json'):
+		with open(fname) as f:
+			dat = json.load(f)
+			for n in self.G.nodes:
+				for d in dat:
+					if n == f'{d["symbol"]}USDT':
+						self.G.nodes[n]['kmeans_cat'] = d['meta']
+						break
+
+	def get_dbscan_clusters(self, fname = 'scraped/dbscan_categories.json'):
+		with open(fname) as f:
+			dat = json.load(f)
+			for n in self.G.nodes:
+				for d in dat:
+					if n == f'{d["symbol"]}USDT':
+						self.G.nodes[n]['dbscan_cat'] = d['meta']
+						break
+
+
+		# if plot_best:
+		# 	best = regressions[0]
+		# 	x1 = best[0].normalized_price()
+		# 	x2 = best[1].normalized_price()
+		# 	plt.scatter(x1, x2, s = 4)
+		# 	plt.xlabel(f'{best[0].ticker}')
+		# 	plt.ylabel(f'{best[1].ticker}')
+		# 	plt.title(f'Best Regression - R^2 = {best[2][2]**2:.4f}')
+		# 	x = np.linspace(0, 1, 100)
+		# 	y = best[2][0]*x + best[2][1]
+		# 	plt.plot(x, y)
+		# 	plt.savefig('Images/best_reg.png', dpi = 500)
+		# return regressions

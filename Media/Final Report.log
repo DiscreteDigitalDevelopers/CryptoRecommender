@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  30 APR 2022 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.29)  30 APR 2022 16:51
 entering extended mode
 **"C:/Users/mnury/Desktop/CSCI-4964/CryptoRecommender/Media/Final Report.tex"
 (C:/Users/mnury/Desktop/CSCI-4964/CryptoRecommender/Media/Final Report.tex
@@ -596,7 +596,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
-* \headheight=55.0pt
+* \headheight=57.0pt
 * \headsep=14.22636pt
 * \topskip=11.0pt
 * \footskip=30.0pt
@@ -617,27 +617,31 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 118.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 118.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 133.
+(Font)              scaled to size 12.0pt on input line 119.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 133.
+(Font)              scaled to size 10.95pt on input line 132.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 20.74pt on input line 147.
 [1{C:/Users/mnury/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 ]
 (Final Report.aux) ) 
 Here is how much of TeX's memory you used:
- 10178 strings out of 478864
- 140677 string characters out of 2848660
- 624201 words of memory out of 3000000
- 27966 multiletter control sequences out of 15000+600000
- 417737 words of font info for 33 fonts, out of 8000000 for 9000
+ 10180 strings out of 478864
+ 140709 string characters out of 2848660
+ 627201 words of memory out of 3000000
+ 27968 multiletter control sequences out of 15000+600000
+ 423341 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,11n,80p,387b,281s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,11n,80p,481b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts/enc/dvi
 ps/newtx/ntx-ec-tlf.enc}<C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/newtx/ztmb.pfb><C:/Users/mnury/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/newtx/ztmr.pfb>
-Output written on "Final Report.pdf" (1 page, 98346 bytes).
+Output written on "Final Report.pdf" (1 page, 104416 bytes).
 PDF statistics:
  17 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
